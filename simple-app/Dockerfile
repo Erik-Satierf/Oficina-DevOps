@@ -1,7 +1,7 @@
-from python:3.10-slim
+FROM python:3.10-slim
 
-workdir /app
+WORKDIR /the/workdir/path /app
 
-copy main.py .
+COPY  main.py .
 
-cmd ["python", "main.py"]
+CMD ["python", "main.py"]
